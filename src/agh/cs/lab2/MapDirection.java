@@ -6,7 +6,7 @@ package agh.cs.lab2;
 public enum MapDirection {
     North, East, South, West;
 
-    public MapDirection next(MapDirection dir){
+    public MapDirection next(){
         return MapDirection.values()[this.ordinal()+1%4];
     }
 //    public MapDirection next(MapDirection dir){
